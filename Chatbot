@@ -1,0 +1,119 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Chatbot {
+
+    public static void main(String[] args) throws InterruptedException {
+        
+        Scanner friends = new Scanner(System.in);
+        
+        System.out.println("Hi what's your name?");
+        
+        String name = friends.nextLine();
+        
+        Thread.sleep(2000);
+        
+        System.out.println("Hi " + name + "!");
+        
+        System.out.println("How may I help you?");
+        System.out.println( "Type Enroll for Available Enrollment");
+        System.out.println( "Type Name for The name of the school");
+        System.out.println( "Type No to stop the bot");
+        
+        Thread.sleep(2000);
+        
+        String help = friends.nextLine();
+        
+        
+        if (help.equalsIgnoreCase("name")){
+            System.out.println( "VGU, Veggies General University, founded in 1989 by Thomas Veggine");
+        }
+        
+        else if (help.equalsIgnoreCase("Enroll")) {
+            System.out.println( "Checking if the school is currently available for enrollment");  
+            int min = 1; 
+            int max = 2; 
+            int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+                
+                if (random_int == 1){
+                    System.out.println( "The school is currently available for enrollment");  
+                    System.out.println( "For further enrollment details please visit vgu.apply.edu");  
+                }
+                else if (random_int == 2) {
+                    System.out.println( "The school is currently not available for enrollment");  
+                }
+                    }
+        else if (help.equalsIgnoreCase("No")) {
+            System.out.println( "Thank you for using our service");  
+        }
+        else {
+            System.out.println( "That doesn't seem to be a valid option try again");  
+        }
+        Thread.sleep(2000);
+        
+        System.out.println("How else may I help you?");
+        
+        String help2 = friends.nextLine();     
+        
+        if (help2.equalsIgnoreCase("name")){
+            System.out.println( "VGU, Veggies General University, founded in 1989 by Thomas Veggine");
+        }
+        
+        else if (help2.equalsIgnoreCase("Enroll")) {
+            System.out.println( "Checking if the school is currently available for enrollment");  
+            int min = 1; 
+            int max = 2; 
+            int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+                
+                if (random_int == 1){
+                    System.out.println( "The school is currently available for enrollment"); 
+                    System.out.println( "For further enrollment details please visit vgu.apply.edu");
+                }
+                else if (random_int == 2) {
+                    System.out.println( "The school is currently not available for enrollment");  
+                }
+                    }
+        else if (help2.equalsIgnoreCase("No")) {
+            System.out.println( "Thank you for using our service");  
+        }
+        else {
+            System.out.println( "That doesn't seem to be a valid option try again");
+        }
+        Thread.sleep(2000);
+        
+        System.out.println("How else may I help you?");
+        
+        String help3 = friends.nextLine();
+        
+        
+        if (help3.equalsIgnoreCase("name")){
+            System.out.println( "VGU, Veggies General University, founded in 1989 by Thomas Veggine");
+        }
+        
+        else if (help3.equalsIgnoreCase("Enroll")) {
+            System.out.println( "Checking if the school is currently available for enrollment");  
+            int min = 1; 
+            int max = 2; 
+            int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+                
+                if (random_int == 1){
+                    System.out.println( "The school is currently available for enrollment");
+                    System.out.println( "For further enrollment details please visit vgu.apply.edu");
+                }
+                else if (random_int == 2) {
+                    System.out.println( "The school is currently not available for enrollment");  
+                }
+                    }
+        
+        else if (help3.equalsIgnoreCase("No")) {
+            System.out.println( "Thank you for using our service");  
+        }
+        
+        else {
+            System.out.println( "That doesn't seem to be a valid option try again");  
+        }
+        Thread.sleep(2000);
+        
+    }
+}
